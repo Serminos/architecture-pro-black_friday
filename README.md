@@ -1,35 +1,24 @@
-# pymongo-api
+# Как проверить?
+## Задания 1. Планирование
+[`schemas/README.md`](README.md)
 
-## Как запустить
+## Задания 2. Шардирование
+[`mongo-sharding/README.md`](README.md)
 
-Запускаем mongodb и приложение
+## Задания 3. Репликация
+[`mongo-sharding-repl/README.md`](README.md)
 
-```shell
-docker compose up -d
-```
+## Задания 4. Кеширование
+[`sharding-repl-cache/README.md`](README.md)
 
-Заполняем mongodb данными
+## Задание 5. Service Discovery и балансировка с API Gateway
+[`schemas/README.md`](README.md)
 
-```shell
-./scripts/mongo-init.sh
-```
+## Задание 6. CDN
+[`schemas/README.md`](README.md)
 
-## Как проверить
-
-### Если вы запускаете проект на локальной машине
-
-Откройте в браузере http://localhost:8080
-
-### Если вы запускаете проект на предоставленной виртуальной машине
-
-Узнать белый ip виртуальной машины
-
-```shell
-curl --silent http://ifconfig.me
-```
-
-Откройте в браузере http://<ip виртуальной машины>:8080
-
-## Доступные эндпоинты
-
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+## Задания 7-10. Архитектурный документ
+Общий документ для задач 7-10: шард-ключи и схемы коллекций MongoDB, выявление и
+устранение горячих шардов, настройка чтения с реплик, миграция части данных в
+Cassandra.
+[`documents/architecture_doc.md`](documents/architecture_doc.md)
